@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: <+serviceConfig.artifacts.primary.image>
+          image: dummy
           ports:
             - containerPort: 8080
