@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: deepakbhor87/harnesstest@sha256:f7be150bfc97f295fe3f450e8895129c4c821ba0fd39e8a59192bc97867dd3f5
+          image: deepakbhor87/harnesstest:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
