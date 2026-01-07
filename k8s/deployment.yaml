@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -11,19 +12,17 @@ spec:
     metadata:
       labels:
         app: java-app
-      annotations:
-        harness.io/redeploy:"true"
-    spec:
-      containers:
-        - name: java-app
-          image: deepakbhor87/harnesstest
-          imagePullPolicy: Always
-          ports:
-            - containerPort: 8080
-          resources:
-            requests:
-              cpu: "100m"
-              memory: "256Mi"
-            limits:
-              cpu: "500m"
-              memory: "512Mi"
+  spec:
+    containers:
+      - name: java-app
+        image: deepakbhor87/harnesstest
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8080
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
