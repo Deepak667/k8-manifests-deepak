@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         app: java-app
+      annotations:
+        rollout-trigger: "<+pipeline.executionId>"  
     spec:
       containers:
         - name: java-app
