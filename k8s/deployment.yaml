@@ -12,7 +12,7 @@ spec:
       labels:
         app: java-app
       annotations:
-        rollout-trigger: "<+pipeline.executionId>"  
+        harness.io/redeploy:"true"
     spec:
       containers:
         - name: java-app
