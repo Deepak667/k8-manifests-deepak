@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: deepakbhor87/harnesstest:<+artifact.tag>
+          image: deepakbhor87/harnesstest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
