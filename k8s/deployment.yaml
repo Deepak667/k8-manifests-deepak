@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: <+pipeline.sequenceId>
+          image: <+artifacts.primary.image>
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
