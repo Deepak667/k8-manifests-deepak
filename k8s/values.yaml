@@ -1,1 +1,3 @@
-image: <+artifacts.primary.image>
+image:
+  repository: deepakbhor87/harnesstest
+  tag: <+pipeline.sequenceId>
